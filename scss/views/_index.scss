@@ -1,0 +1,25 @@
+//index file
+
+.header h1 {
+  color: $primary-text-color;
+}
+
+.nav-pills {
+  display: block;
+  margin: 20px 20px 0 0;
+}
+
+.nav-pills li a {
+  color: $primary-text-color;
+  font- {
+    size: 36px;
+    weight: normal;
+  }
+  letter-spacing: 2px;
+}
+
+.nav-pills li a:hover {
+  background-color:rgba(216,25,47,1);
+  box-shadow:0 2px 4px rgba(0,0,0,.5);
+  color:#fff;
+}
