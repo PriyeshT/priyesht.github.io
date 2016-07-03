@@ -16,23 +16,125 @@ html {
   background-size: 1400px;
   color: #fff; }
 
-.header h1 {
-  color: #d8192f; }
+html {
+  box-sizing: border-box; }
 
-.nav-pills {
-  display: block;
-  margin: 20px 20px 0 0; }
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-.nav-pills li a {
-  color: #d8192f;
-  letter-spacing: 2px; }
-  .nav-pills li a font- {
-    size: 36px;
-    weight: normal; }
+@media screen and (min-width: 320px) {
+  .main p, .capabilities p {
+    text-align: justify; }
 
-.nav-pills li a:hover {
-  background-color: #d8192f;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #fff; }
+  header {
+    height: 550px;
+    padding-top: 50px;
+    background-color: #B83C3A; }
+    header p {
+      font-size: 16px;
+      color: #fff; }
+
+  .main-nav, .main, .capabilities {
+    position: relative; }
+
+  .main-nav {
+    background: #fff;
+    margin-bottom: -80px;
+    z-index: 150;
+    box-shadow: 0 4px 5px rgba(184, 60, 58, 0.4); }
+    .main-nav a {
+      padding: 10px 15px 10px 15px;
+      display: inline-block;
+      color: #B83C3A;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none; }
+
+  .main {
+    background: #fff;
+    padding: 110px 50px 50px; }
+
+  .capabilities {
+    background: #403F41;
+    color: #fff;
+    padding: 60px 50px 50px; }
+
+  header, .main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0; }
+
+  .btn {
+    padding: 8px 30px 8px 30px;
+    color: #fff;
+    background: #FF5722;
+    border-color: #FF5722;
+    border-radius: 0; }
+    .btn:hover {
+      color: #FF5722;
+      background: black;
+      border-color: black;
+      border-radius: 0; }
+
+  .progress-bar {
+    background-color: #FF5722; }
+
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #fff; }
+
+  h1 {
+    font-size: 20px;
+    color: #fff; }
+
+  .btn {
+    margin-top: 20px; } }
+@media screen and (min-width: 650px) {
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #fff; }
+
+  h1 {
+    font-size: 30px;
+    color: #fff; }
+
+  .btn {
+    margin-top: 30px; } }
+@media screen and (min-width: 980px) {
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #fff; }
+
+  .main {
+    height: 400px; }
+
+  h1 {
+    font-size: 40px;
+    color: #fff; }
+
+  .btn {
+    margin-top: 40px; } }
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Didac Gothic', Verdana, sans-serif; }
+
+body.main-page {
+  margin: 0;
+  padding-top: 550px; }
+
+body.contact-page {
+  margin: 0;
+  padding-top: 350px; }
+
+.active {
+  border-bottom: 2px solid #FF5722; }
 
 /*# sourceMappingURL=main.css.map */

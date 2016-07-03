@@ -3,5 +3,29 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'helpers/variables';
+@import 'helpers/placeholders';
 @import 'common/base';
 @import 'views/index';
+@import 'views/contact';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Didac Gothic', Verdana, sans-serif;
+}
+
+body.main-page {
+  margin: 0;
+  padding-top: 550px;
+}
+
+body.contact-page {
+  margin: 0;
+  padding-top: 350px;
+}
+
+.active {
+  border-bottom: 2px solid $accent-color;
+}

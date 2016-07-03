@@ -1,25 +1,146 @@
-//index file
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+@import "../helpers/variables";
+@import "../helpers/placeholders";
 
-.header h1 {
-  color: $primary-text-color;
-}
+@media screen and (min-width: 320px) {
 
-.nav-pills {
-  display: block;
-  margin: 20px 20px 0 0;
-}
-
-.nav-pills li a {
-  color: $primary-text-color;
-  font- {
-    size: 36px;
-    weight: normal;
+  %p-justify{
+    p {
+      text-align: justify;
+    }
   }
-  letter-spacing: 2px;
+
+  header{
+    height: 550px;
+    padding-top: 50px;
+    background-color: $dark-primary-color;
+
+    p {
+      font-size: 16px;
+      color: $white;
+    }
+  }
+
+  .main-nav, .main, .capabilities {
+    position: relative;
+  }
+
+  .main-nav {
+    background: #fff;
+    margin-bottom: -80px;
+    z-index: 150;
+    box-shadow: 0 4px 5px rgba(184,60,58,0.4);
+
+    a {
+      padding: 10px 15px 10px 15px;
+      display: inline-block;
+      color: $dark-primary-color;
+      font: {
+        size: 16px;
+        weight: normal;
+      }
+      line-height: 50px;
+      text: {
+        align: center;
+        transform: uppercase;
+        decoration: none;
+      }
+    }
+  }
+
+  .main {
+    background: #fff;
+    padding: 110px 50px 50px;
+    @extend %p-justify;
+  }
+
+  .capabilities {
+    background: $secondary-color;
+    color: $white;
+    padding: 60px 50px 50px;
+    @extend %p-justify;
+  }
+
+  header, .main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .btn {
+    padding: 8px 30px 8px 30px;
+    color: $white;
+    background: $accent-color;
+    border-color: $accent-color;
+    border-radius: 0;
+
+    &:hover {
+      color: $accent-color;
+      background: black;
+      border-color: black;
+      border-radius: 0;
+    }
+  }
+
+  .progress-bar {
+    background-color: $accent-color;
+  }
+
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: $white;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: $white;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
 }
 
-.nav-pills li a:hover {
-  background-color:rgba(216,25,47,1);
-  box-shadow:0 2px 4px rgba(0,0,0,.5);
-  color:#fff;
+
+@media screen and (min-width: 650px) {
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: $white;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: $white;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+}
+
+
+@media screen and (min-width: 980px){
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: $white;
+  }
+
+  .main {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: $white;
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
+
 }
