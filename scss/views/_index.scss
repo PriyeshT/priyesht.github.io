@@ -2,6 +2,7 @@
 @import "../neat/neat";
 @import "../helpers/variables";
 @import "../helpers/placeholders";
+@import "../helpers/mixins";
 
 @media screen and (min-width: 320px) {
 
@@ -9,6 +10,10 @@
     p {
       text-align: justify;
     }
+  }
+
+  .wrap {
+    min-height: calc(100vh - 110px);
   }
 
   header{
@@ -22,7 +27,7 @@
     }
   }
 
-  .main-nav, .main, .capabilities {
+  .main-nav, .main, .capabilities, .footer {
     position: relative;
   }
 
@@ -47,6 +52,7 @@
         decoration: none;
       }
     }
+
   }
 
   .main {
@@ -56,10 +62,63 @@
   }
 
   .capabilities {
-    background: $secondary-color;
-    color: $white;
+    background: $white;
     padding: 60px 50px 50px;
     @extend %p-justify;
+  }
+
+  .divider {
+    border-bottom: 1px solid $divider-color;
+  }
+
+  .footer {
+    background: lighten($secondary-color,20%);
+    color: $white;
+
+    .footer-nav{
+      list-style: none;
+      padding: 10px 2px 2px 2px;
+      text-transform: uppercase;
+      font-size: 14px;
+
+      & a, & a:hover, & a:visited {
+        text-decoration: none;
+        color: $accent-color;
+      }
+    }
+
+    .footer-items {
+      display: inline;
+
+      & a, & a:hover, & a:visited {
+        text-decoration: none;
+      }
+    }
+
+    .footer-social {
+      margin-bottom: 20px;
+    }
+
+    .fb {
+      color: $facebook;
+    }
+
+    .twitter {
+      color: $twitter;
+    }
+
+    .linkedin {
+      color: $linkedin;
+    }
+
+    .github {
+      color: $github;
+    }
+
+    .codepen {
+      color: $codepen;
+    }
+
   }
 
   header, .main-nav-scrolled {
@@ -81,6 +140,7 @@
       border-color: black;
       border-radius: 0;
     }
+
   }
 
   .progress-bar {
@@ -130,9 +190,6 @@
     color: $white;
   }
 
-  .main {
-    height: 400px;
-  }
 
   h1 {
     font-size: 40px;

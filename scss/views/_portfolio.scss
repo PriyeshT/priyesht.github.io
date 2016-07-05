@@ -1,0 +1,29 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'helpers/variables';
+
+@media screen and (min-width: 320px){
+  header.portfolio{
+    height: 350px;
+    padding-top: 50px;
+    background-color: $dark-primary-color;
+
+    p {
+      font-size: 16px;
+      color: $white;
+    }
+  }
+  .portfolio, .main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .portfolio-row {
+    padding: 5px 10px;
+
+    .project-title {
+      color: $accent-color;
+    }
+  }
+}

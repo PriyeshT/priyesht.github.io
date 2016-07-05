@@ -4,9 +4,12 @@
 @import 'neat/neat';
 @import 'helpers/variables';
 @import 'helpers/placeholders';
+@import 'helpers/mixins';
 @import 'common/base';
 @import 'views/index';
 @import 'views/contact';
+@import 'views/portfolio';
+@import 'views/projects';
 
 * {
   box-sizing: border-box;
@@ -19,6 +22,11 @@ body {
 body.main-page {
   margin: 0;
   padding-top: 550px;
+}
+
+body.portfolio-page {
+  margin: 0;
+  padding-top: 350px;
 }
 
 body.contact-page {

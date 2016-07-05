@@ -1,0 +1,9 @@
+@mixin social-style($color) {
+  padding: 8px 16px 8px 16px;
+  border: 2px solid $color;
+}
+
+@mixin social-style-hover($color) {
+  background: $color;
+  color: #fff;
+}

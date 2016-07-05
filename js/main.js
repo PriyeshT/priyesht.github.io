@@ -4,9 +4,12 @@ $(document).ready(function(){
       act = "active";
       hdr = $('header').height();
       work = $("#work");
-      portfolio = $("#portfolio");
+      projects = $("#projects");
       about = $("#about");
       contact = $("#contact");
+      formerrors = $('.form-errors');
+      button = $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
+
 
   $(window).scroll(function() {
     if( $(this).scrollTop() > hdr ) {
@@ -16,26 +19,50 @@ $(document).ready(function(){
     }
   });
 
-  portfolio.on('click',function(){
-    portfolio.addClass(act);
+  projects.on('click',function(){
+    projects.addClass(act);
     about.removeClass(act);
     contact.removeClass(act);
   })
 
   about.on('click',function(){
     about.addClass(act);
-    portfolio.removeClass(act);
+    projects.removeClass(act);
     contact.removeClass(act);
   });
 
   contact.on('click',function(){
     contact.addClass(act);
-    portfolio.removeClass(act);
+    projects.removeClass(act);
     about.removeClass(act);
   })
 
   work.on('click', function(){
-    portfolio.addClass(act);
+    projects.addClass(act);
     about.removeClass(act);
+  });
+
+  $("#contact-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      firstName: 'required',
+      sub: 'required',
+      msg: 'required'
+    },
+    highlight: function(element, errorClass, validClass) {
+      $(element).parents('.col-md-6').addClass('has-error').removeClass('has-success');
+      $(element).parents('.col-md-12').addClass('has-error').removeClass('has-success');
+      $('.form-errors').addClass('alert alert-danger alert-dismissible');
+      formerrors.append(button);
+      $('.form-errors').html("Validation errors have occured")
+    },
+    unhighlight: function(element, errorClass, validClass){
+      formerrors.hide();
+      $(element).parents('.col-md-6').addClass('has-success').removeClass('has-error');
+      $(element).parents('.col-md-12').addClass('has-success').removeClass('has-error');
+    }
   });
 })

@@ -18,86 +18,95 @@
         <script src="https://use.fortawesome.com/4c13728f.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body class="contact-page">
+    <body class="portfolio-page">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="contact">
+        <header class="portfolio">
           <div class="container text-center">
 
             <h1 class="name">Priyesh Tungare</h1><br><br>
-            <h1> Contact </h1>
-            <p> Get in touch with me</p>
+            <h1> Portfolio </h1>
+            <p> View the Projects that I have worked on</p>
           </div>
         </header>
         <nav class="main-nav text-center">
           <a href="index.html" id="about">About</a>
-          <a href="portfolio.html" id="projects">Portfolio</a>
-          <a href="contact.html" class="active" id="contact">Contact</a>
+          <a href="portfolio.html" class="active" id="projects">Portfolio</a>
+          <a href="contact.html" id="contact">Contact</a>
         </nav>
 
         <div class="wrap">
           <div class="main">
             <div class="container">
-              <div class="row contact-info">
-                <div class="col-md-3">
-                  <p>Have a question or comment or suggestion?</p>
-                  <p> Feel free to reach out to me using the handy form provided or
-                    follow me on <span class="social"><a href="https://twitter.com/miPriyesh" target="_blank">Twitter</a></span>, <span class="social">
-                      <a href="https://www.facebook.com/priyesh.tungare" target="_blank">Facebook</a></span>. Connect with me on <span class="social"><a href="https://sg.linkedin.com/in/priyeshtungare" target="_blank">LinkedIn</a> </span> <br> <br>Check out my profile on <span class="social"><a href="https://www.freecodecamp.com/priyesht" target="_blank">FreeCodeCamp</a></span>,
-                      <span class="social"><a href="https://www.codecademy.com/cloudNinja62203" target="_blank">Codecademy</a></span>, <span class="social"><a href="https://teamtreehouse.com/priyeshtungare" target="_blank">TeamTreeHouse</a></span>.
-                  </p>
+              <div class="row portfolio-row">
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="wikiviewer.html">
+                    <img class="img-responsive test" src="img/wiki03.png">
+                  </a>
+                  <h3 class="project-title text-center">Wikipedia Viewer</h3>
                 </div>
-                <div class="col-md-9">
-                  <form id="contact-form" method="post" action="https://formspree.io/priyeshtungare31@gmail.com">
-                    <div class="form-errors" role="alert">
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="todolist.html">
+                    <img class="img-responsive test" src="img/todo03.png">
+                  </a>
+                  <h3 class="project-title text-center">ToDo List</h3>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="pomodoro.html">
+                    <img class="img-responsive test" src="img/pomodoro03.png">
+                  </a>
+                  <h3 class="project-title text-center">Pomodoro Timer</h3>
+                </div>
+              </div>
 
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="firstName">First Name</label>
-                          <input type="text" class="form-control" id ="firstName" name="firstName">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="lastName">Last Name</label>
-                          <input type="text" class="form-control" id="lastName" name="lastName">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="email">Email Address</label>
-                          <input type="text" class="form-control" id ="email" name="email">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="sub">Subject</label>
-                          <input type="text" class="form-control" id ="sub" name="sub">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="msg">Message</label>
-                          <textarea rows="3" class="form-control" id ="msg" name="msg"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="btn btn-default" type="submit">Send</button>
-                    <input type="hidden" name="_next" value="http://localhost/portfolio_new/contact.html" />
-                  </form>
+              <div class="row portfolio-row">
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="#">
+                    <img class="img-responsive test" src="img/quote03.png">
+                  </a>
+                  <h3 class="project-title text-center">Random Quote Generator</h3>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="#">
+                    <img class="img-responsive test" src="img/tribute03.png">
+                  </a>
+                  <h3 class="project-title text-center">Tribute Page</h3>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="#">
+                    <img class="img-responsive test" src="img/weather03.png">
+                  </a>
+                  <h3 class="project-title text-center">Weather Report</h3>
+                </div>
+              </div>
+
+              <div class="row portfolio-row">
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="#">
+                    <img class="img-responsive test" src="img/calc03.png">
+                  </a>
+                  <h3 class="project-title text-center">Calculator</h3>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="#">
+                    <img class="img-responsive test" src="img/calc03.png">
+                  </a>
+                  <h3 class="project-title text-center">Tic Tac Toe</h3>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                  <a class="project-link" href="#">
+                    <img class="img-responsive test" src="img/twitch03.png">
+                  </a>
+                  <h3 class="project-title text-center">Twitch Streamers</h3>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
+
 
         <div class="footer">
           <div class="container">
@@ -157,10 +166,6 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/vendor/jquery.validate.min.js"></script>
-        <script src="js/vendor/additional-methods.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/validation_msg.js"></script>
         <script src="js/main.js"></script>
 
 

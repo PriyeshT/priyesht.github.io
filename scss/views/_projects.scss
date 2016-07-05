@@ -1,0 +1,46 @@
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+@import "../helpers/variables";
+@import "../helpers/placeholders";
+@import "../helpers/mixins";
+
+
+.gi-2x {
+  font-size: 2em;
+  color: $accent-color;
+}
+
+.code-pen, .project-desc {
+  margin-top: 30px;
+}
+
+.code-pen {
+  height: auto;
+}
+// .project {
+//   height: 550px;
+// }
+
+.project-desc {
+  &>p.project-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #576D94;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+  }
+
+  & a, a:hover, a:visited {
+    text-decoration: none;
+  }
+
+  & a:hover{
+    color: $accent-color;
+  }
+
+  .panel-heading {
+    background: $dark-primary-color;
+    color: $white;
+  }
+}

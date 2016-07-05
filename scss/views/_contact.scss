@@ -1,0 +1,67 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'helpers/variables';
+
+@media screen and (min-width: 320px){
+  header.contact{
+    height: 350px;
+    padding-top: 50px;
+    background-color: $dark-primary-color;
+
+  }
+  .contact, .main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .navbar-toggle {
+    color: $accent-color;
+  }
+
+  .contact-info p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .social {
+    color: $accent-color;
+    font-style: italic;
+    font-weight: bold;
+
+    a{
+      text-decoration: none;
+      color: $accent-color;
+    }
+  }
+
+  .has-error {
+    & input {
+      background: lighten(#A94442, 40%);
+    }
+
+    & textarea {
+      background: lighten(#A94442, 40%);
+    }
+
+  }
+
+  .has-success {
+    & input {
+      background: transparent;
+    }
+
+    & textarea {
+      background: transparent;
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    form{
+      padding: 0 0 0 55px;
+    }
+
+}
