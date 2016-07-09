@@ -34,7 +34,7 @@ html {
     padding-top: 50px;
     background-color: #B83C3A; }
     header p {
-      font-size: 16px;
+      font-size: 1em;
       color: #fff; }
 
   .main-nav, .main, .capabilities, .footer {
@@ -46,10 +46,10 @@ html {
     z-index: 150;
     box-shadow: 0 4px 5px rgba(184, 60, 58, 0.4); }
     .main-nav a {
-      padding: 10px 15px 10px 15px;
+      padding: 5px 10px 5px 10px;
       display: inline-block;
       color: #B83C3A;
-      font-size: 16px;
+      font-size: 1em;
       font-weight: normal;
       line-height: 50px;
       text-align: center;
@@ -67,6 +67,10 @@ html {
   .divider {
     border-bottom: 1px solid #B6B6B6; }
 
+  .underline {
+    text-decoration: underline;
+    font-weight: 600; }
+
   .footer {
     background: #737175;
     color: #fff; }
@@ -74,7 +78,7 @@ html {
       list-style: none;
       padding: 10px 2px 2px 2px;
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 0.875em; }
       .footer .footer-nav a, .footer .footer-nav a:hover, .footer .footer-nav a:visited {
         text-decoration: none;
         color: #FF5722; }
@@ -101,7 +105,7 @@ html {
     top: 0; }
 
   .btn {
-    padding: 8px 30px 8px 30px;
+    padding: 4px 18px 4px 18px;
     color: #fff;
     background: #FF5722;
     border-color: #FF5722;
@@ -117,11 +121,11 @@ html {
 
   .name {
     font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+    font-size: 2.5em;
     color: #fff; }
 
   h1 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #fff; }
 
   .btn {
@@ -129,27 +133,39 @@ html {
 @media screen and (min-width: 650px) {
   .name {
     font-family: 'Dancing Script', cursive;
-    font-size: 60px;
+    font-size: 3.75em;
     color: #fff; }
 
   h1 {
-    font-size: 30px;
+    font-size: 1.875em;
     color: #fff; }
 
   .btn {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .main-nav a {
+    padding: 7px 12px 7px 12px; }
+
+  .btn {
+    padding: 6px 24px 6px 24px; } }
 @media screen and (min-width: 980px) {
   .name {
     font-family: 'Dancing Script', cursive;
-    font-size: 80px;
+    font-size: 5em;
     color: #fff; }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.5em;
     color: #fff; }
 
   .btn {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+
+  .main-nav a {
+    padding: 10px 15px 10px 15px; }
+
+  .btn {
+    padding: 8px 30px 8px 30px; } }
 html {
   box-sizing: border-box; }
 
@@ -206,7 +222,7 @@ html {
     padding-top: 50px;
     background-color: #B83C3A; }
     header.portfolio p {
-      font-size: 16px;
+      font-size: 1em;
       color: #fff; }
 
   .portfolio, .main-nav-scrolled {
@@ -217,7 +233,22 @@ html {
   .portfolio-row {
     padding: 5px 10px; }
     .portfolio-row .project-title {
-      color: #FF5722; } }
+      color: #FF5722; }
+
+  h4 {
+    font-size: 1em; }
+
+  .card-img-overlay {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.75); }
+    .card-img-overlay .btn {
+      margin-top: 0;
+      padding: 2px 10px 2px 10px; }
+
+  .card:hover .card-img-overlay {
+    vertical-align: middle;
+    text-align: center;
+    opacity: 1; } }
 html {
   box-sizing: border-box; }
 

@@ -9,7 +9,7 @@
     background-color: $dark-primary-color;
 
     p {
-      font-size: 16px;
+      font-size: em(16);
       color: $white;
     }
   }
@@ -26,4 +26,26 @@
       color: $accent-color;
     }
   }
+
+  h4 {
+    font-size: em(16);
+  }
+
+  .card-img-overlay {
+    opacity: 0;
+    background: rgba(0,0,0,0.75);
+
+    .btn {
+      margin-top: 0;
+      padding: 2px 10px 2px 10px;
+    }
+  }
+
+  .card:hover .card-img-overlay {
+    vertical-align: middle;
+    text-align: center;
+    opacity: 1;
+  }
+
+
 }

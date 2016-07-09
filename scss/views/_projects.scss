@@ -17,9 +17,6 @@
 .code-pen {
   height: auto;
 }
-// .project {
-//   height: 550px;
-// }
 
 .project-desc {
   &>p.project-title {
@@ -43,4 +40,5 @@
     background: $dark-primary-color;
     color: $white;
   }
+
 }

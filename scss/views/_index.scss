@@ -22,7 +22,7 @@
     background-color: $dark-primary-color;
 
     p {
-      font-size: 16px;
+      font-size: em(16);
       color: $white;
     }
   }
@@ -38,11 +38,11 @@
     box-shadow: 0 4px 5px rgba(184,60,58,0.4);
 
     a {
-      padding: 10px 15px 10px 15px;
+      padding: 5px 10px 5px 10px;
       display: inline-block;
       color: $dark-primary-color;
       font: {
-        size: 16px;
+        size: em(16);
         weight: normal;
       }
       line-height: 50px;
@@ -71,6 +71,11 @@
     border-bottom: 1px solid $divider-color;
   }
 
+  .underline {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
   .footer {
     background: lighten($secondary-color,20%);
     color: $white;
@@ -79,7 +84,7 @@
       list-style: none;
       padding: 10px 2px 2px 2px;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: em(14);
 
       & a, & a:hover, & a:visited {
         text-decoration: none;
@@ -128,7 +133,7 @@
   }
 
   .btn {
-    padding: 8px 30px 8px 30px;
+    padding: 4px 18px 4px 18px;
     color: $white;
     background: $accent-color;
     border-color: $accent-color;
@@ -149,12 +154,12 @@
 
   .name {
     font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+    font-size: em(40);
     color: $white;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: em(20);
     color: $white;
   }
 
@@ -168,17 +173,27 @@
 @media screen and (min-width: 650px) {
   .name {
     font-family: 'Dancing Script', cursive;
-    font-size: 60px;
+    font-size: em(60);
     color: $white;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: em(30);
     color: $white;
   }
 
   .btn {
     margin-top: 30px;
+  }
+
+  .main-nav {
+    a {
+      padding: 7px 12px 7px 12px;
+    }
+  }
+
+  .btn {
+    padding: 6px 24px 6px 24px;
   }
 }
 
@@ -186,18 +201,28 @@
 @media screen and (min-width: 980px){
   .name {
     font-family: 'Dancing Script', cursive;
-    font-size: 80px;
+    font-size: em(80);
     color: $white;
   }
 
 
   h1 {
-    font-size: 40px;
+    font-size: em(40);
     color: $white;
   }
 
   .btn {
     margin-top: 40px;
+  }
+
+  .main-nav {
+    a{
+      padding: 10px 15px 10px 15px;
+    }
+  }
+
+  .btn {
+    padding: 8px 30px 8px 30px;
   }
 
 }
