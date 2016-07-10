@@ -19,12 +19,11 @@
   header{
     height: 550px;
     padding-top: 50px;
-    background-color: $dark-primary-color;
+    // background-color: $dark-primary-color;
+    background: url('https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0') no-repeat center center fixed;
+    background-size: cover;
+    color: #3D4049;
 
-    p {
-      font-size: em(16);
-      color: $white;
-    }
   }
 
   .main-nav, .main, .capabilities, .footer {
@@ -155,14 +154,9 @@
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: em(40);
-    color: $white;
+    color: #3D4049;
+    text-transform: none;
   }
-
-  h1 {
-    font-size: em(20);
-    color: $white;
-  }
-
   .btn {
     margin-top: 20px;
   }
@@ -174,12 +168,7 @@
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: em(60);
-    color: $white;
-  }
-
-  h1 {
-    font-size: em(30);
-    color: $white;
+    color: #3D4049;
   }
 
   .btn {
@@ -202,13 +191,7 @@
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: em(80);
-    color: $white;
-  }
-
-
-  h1 {
-    font-size: em(40);
-    color: $white;
+    color: #3D4049;
   }
 
   .btn {

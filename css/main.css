@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Laila:400|Lato:700,400|Karla:400|Kanit:400";
+@import "https://fonts.googleapis.com/css?family=Dancing+Script:700";
 html {
   box-sizing: border-box; }
 
@@ -10,11 +12,75 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.container-fluid {
-  height: 500px;
-  background: url(https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1b0aa3802706c803f1c2f261d761f584) no-repeat center center;
-  background-size: 1400px;
-  color: #fff; }
+* {
+  box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body.main-page {
+  margin: 0;
+  padding-top: 550px; }
+
+body.portfolio-page {
+  margin: 0;
+  padding-top: 350px; }
+
+body.contact-page {
+  margin: 0;
+  padding-top: 350px; }
+
+.active {
+  border-bottom: 2px solid #FF5722; }
+
+h1 {
+  font-family: "Laila", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.20;
+  opacity: 1.00;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  letter-spacing: -0.72px;
+  word-spacing: 0.00px;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Laila", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.20;
+  opacity: 1.00;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  letter-spacing: -0.72px;
+  word-spacing: 0.00px;
+  text-transform: none; }
+
+h3 {
+  font-family: "Laila", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.20;
+  opacity: 1.00;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  letter-spacing: 0.00px;
+  word-spacing: 0.00px;
+  text-transform: uppercase; }
+
+p {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.60;
+  opacity: 0.70;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  letter-spacing: -0.30px;
+  word-spacing: -0.10px;
+  text-transform: none; }
 
 html {
   box-sizing: border-box; }
@@ -32,10 +98,9 @@ html {
   header {
     height: 550px;
     padding-top: 50px;
-    background-color: #B83C3A; }
-    header p {
-      font-size: 1em;
-      color: #fff; }
+    background: url("https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0") no-repeat center center fixed;
+    background-size: cover;
+    color: #3D4049; }
 
   .main-nav, .main, .capabilities, .footer {
     position: relative; }
@@ -122,11 +187,8 @@ html {
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
-    color: #fff; }
-
-  h1 {
-    font-size: 1.25em;
-    color: #fff; }
+    color: #3D4049;
+    text-transform: none; }
 
   .btn {
     margin-top: 20px; } }
@@ -134,11 +196,7 @@ html {
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: 3.75em;
-    color: #fff; }
-
-  h1 {
-    font-size: 1.875em;
-    color: #fff; }
+    color: #3D4049; }
 
   .btn {
     margin-top: 30px; }
@@ -152,11 +210,7 @@ html {
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: 5em;
-    color: #fff; }
-
-  h1 {
-    font-size: 2.5em;
-    color: #fff; }
+    color: #3D4049; }
 
   .btn {
     margin-top: 40px; }
@@ -176,7 +230,8 @@ html {
   header.contact {
     height: 350px;
     padding-top: 50px;
-    background-color: #B83C3A; }
+    background: url("https://images.unsplash.com/photo-1451421924504-c52d431cdad5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9d965a78fac3ea25b7c88cc959eb5654") no-repeat center center;
+    background-size: cover; }
 
   .contact, .main-nav-scrolled {
     position: fixed;
@@ -220,7 +275,8 @@ html {
   header.portfolio {
     height: 350px;
     padding-top: 50px;
-    background-color: #B83C3A; }
+    background: url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351") no-repeat center center fixed;
+    background-size: cover; }
     header.portfolio p {
       font-size: 1em;
       color: #fff; }
@@ -279,26 +335,5 @@ html {
 .project-desc .panel-heading {
   background: #B83C3A;
   color: #fff; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Didac Gothic', Verdana, sans-serif; }
-
-body.main-page {
-  margin: 0;
-  padding-top: 550px; }
-
-body.portfolio-page {
-  margin: 0;
-  padding-top: 350px; }
-
-body.contact-page {
-  margin: 0;
-  padding-top: 350px; }
-
-.active {
-  border-bottom: 2px solid #FF5722; }
 
 /*# sourceMappingURL=main.css.map */

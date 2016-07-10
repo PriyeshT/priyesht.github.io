@@ -4,9 +4,82 @@
 @import 'neat/neat';
 @import 'helpers/variables';
 
-.container-fluid {
-  height: 500px;
-  background: url(https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1b0aa3802706c803f1c2f261d761f584) no-repeat center center;
-  background-size: 1400px;
-  color: $white;
+* {
+  box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.main-page {
+  margin: 0;
+  padding-top: 550px;
+}
+
+body.portfolio-page {
+  margin: 0;
+  padding-top: 350px;
+}
+
+body.contact-page {
+  margin: 0;
+  padding-top: 350px;
+}
+
+.active {
+  border-bottom: 2px solid $accent-color;
+}
+
+h1 {
+    font-family: "Laila", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.20;
+    opacity: 1.00;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: -0.72px;
+    word-spacing: 0.00px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Laila", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.20;
+    opacity: 1.00;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: -0.72px;
+    word-spacing: 0.00px;
+    text-transform: none;
+}
+
+h3 {
+    font-family: "Laila", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.20;
+    opacity: 1.00;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 0.00px;
+    word-spacing: 0.00px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.60;
+    opacity: 0.70;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    letter-spacing: -0.30px;
+    word-spacing: -0.10px;
+    text-transform: none;
 }

@@ -6,8 +6,9 @@
   header.contact{
     height: 350px;
     padding-top: 50px;
-    background-color: $dark-primary-color;
-
+    // background-color: $dark-primary-color;
+    background: url('https://images.unsplash.com/photo-1451421924504-c52d431cdad5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9d965a78fac3ea25b7c88cc959eb5654') no-repeat center center;
+    background-size: cover;
   }
   .contact, .main-nav-scrolled {
     position: fixed;

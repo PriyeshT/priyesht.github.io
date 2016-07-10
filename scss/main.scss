@@ -1,5 +1,7 @@
 //main scss file
 
+@import 'https://fonts.googleapis.com/css?family=Laila:400|Lato:700,400|Karla:400|Kanit:400';
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script:700';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'helpers/variables';
@@ -10,30 +12,3 @@
 @import 'views/contact';
 @import 'views/portfolio';
 @import 'views/projects';
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Didac Gothic', Verdana, sans-serif;
-}
-
-body.main-page {
-  margin: 0;
-  padding-top: 550px;
-}
-
-body.portfolio-page {
-  margin: 0;
-  padding-top: 350px;
-}
-
-body.contact-page {
-  margin: 0;
-  padding-top: 350px;
-}
-
-.active {
-  border-bottom: 2px solid $accent-color;
-}

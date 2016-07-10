@@ -6,7 +6,9 @@
   header.portfolio{
     height: 350px;
     padding-top: 50px;
-    background-color: $dark-primary-color;
+    // background-color: $dark-primary-color;
+    background: url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351') no-repeat center center fixed;
+    background-size: cover;
 
     p {
       font-size: em(16);
