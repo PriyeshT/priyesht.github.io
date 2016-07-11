@@ -26,7 +26,7 @@
 
   }
 
-  .main-nav, .main, .capabilities, .footer {
+  .main-nav, .main, .capabilities, .footer, .funfacts {
     position: relative;
   }
 
@@ -66,6 +66,22 @@
     @extend %p-justify;
   }
 
+  .funfacts {
+    background: $white;
+    padding: 40px 50px 50px;
+  }
+
+  .facts>li {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.60;
+    opacity: 0.70;
+    letter-spacing: -0.30px;
+    word-spacing: -0.10px;
+    text-transform: none;
+  }
+
   .divider {
     border-bottom: 1px solid $divider-color;
   }
@@ -73,6 +89,10 @@
   .underline {
     text-decoration: underline;
     font-weight: 600;
+  }
+
+  .facts {
+    list-style: none;
   }
 
   .footer {
