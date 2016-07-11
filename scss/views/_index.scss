@@ -20,9 +20,16 @@
     height: 550px;
     padding-top: 50px;
     // background-color: $dark-primary-color;
-    background: url('https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0') no-repeat center center fixed;
+    // background: url('https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8d560cd877f002980248703b48efff0') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/uploads/14125120591540eb48427/c1c4b1aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=71aef009b7955aa75361f9b9cc90108e') no-repeat center center fixed;
     background-size: cover;
-    color: #3D4049;
+    color: $white;
+
+      p {
+        font-size: em(18);
+        font-weight: 600;
+      }
+
 
   }
 
@@ -52,6 +59,11 @@
       }
     }
 
+    a:hover{
+      color: black;
+      font-weight: bold;
+    }
+
   }
 
   .main {
@@ -62,18 +74,18 @@
 
   .capabilities {
     background: $white;
-    padding: 60px 50px 50px;
+    padding: 20px 50px 50px;
     @extend %p-justify;
   }
 
   .funfacts {
     background: $white;
-    padding: 40px 50px 50px;
+    padding: 20px 50px 50px;
   }
 
   .facts>li {
     font-family: "Kanit", sans-serif;
-    font-size: 18px;
+    font-size: em(18);
     font-weight: 400;
     line-height: 1.60;
     opacity: 0.70;
@@ -143,6 +155,10 @@
       color: $codepen;
     }
 
+    .location {
+      color: $location;
+    }
+
   }
 
   header, .main-nav-scrolled {
@@ -174,7 +190,7 @@
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: em(40);
-    color: #3D4049;
+    color: $white;
     text-transform: none;
   }
   .btn {
@@ -188,7 +204,13 @@
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: em(60);
-    color: #3D4049;
+  }
+
+  header {
+    p {
+      font-size: em(20);
+      font-weight: 600;
+    }
   }
 
   .btn {
@@ -211,7 +233,13 @@
   .name {
     font-family: 'Dancing Script', cursive;
     font-size: em(80);
-    color: #3D4049;
+  }
+
+  header {
+    p {
+      font-size: em(22);
+      font-weight: 600;
+    }
   }
 
   .btn {

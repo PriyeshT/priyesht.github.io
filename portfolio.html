@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
   <script src="https://use.fortawesome.com/4c13728f.js"></script>
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -32,7 +30,9 @@
       <p> View the Projects that I have worked on</p>
     </div>
   </header>
-  <nav class="main-nav text-center">
+  <nav class="main-nav text-center" role="menu">
+    <input type="checkbox" id="menu-button">
+    <label id="menu-label" for="menu-button" onclick></label>
     <a href="index.html" id="about">About</a>
     <a href="portfolio.html" class="active" id="projects">Portfolio</a>
     <a href="contact.html" id="contact">Contact</a>
@@ -208,6 +208,12 @@
                       <a href="http://codepen.io/PriyeshT/" target="_blank" class="codepen">
                         <i class="fa fa-circle-o fa-stack-2x"></i>
                         <i class="fa fa-codepen fa-stack-1x"></i>
+                      </a>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                      <a href="https://www.google.com.sg/maps/@1.3295766,103.9361376,16z" target="_blank" class="location">
+                        <i class="fa fa-circle-o fa-stack-2x"></i>
+                        <i class="fa fa-map-marker fa-stack-1x"></i>
                       </a>
                     </span>
                   </div>

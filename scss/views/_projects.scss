@@ -21,7 +21,7 @@
 .project-desc {
   &>p.project-title {
     text-align: center;
-    font-size: 18px;
+    font-size: em(18);
     font-weight: 600;
     color: #576D94;
     text-transform: uppercase;
