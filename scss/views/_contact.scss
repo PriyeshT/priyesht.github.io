@@ -7,7 +7,7 @@
     height: 350px;
     padding-top: 50px;
     // background-color: $dark-primary-color;
-    background: url('https://images.unsplash.com/photo-1451421924504-c52d431cdad5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9d965a78fac3ea25b7c88cc959eb5654') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1451421924504-c52d431cdad5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9d965a78fac3ea25b7c88cc959eb5654') no-repeat center center;
     @include bgCover;
     overflow: hidden;
   }
@@ -64,6 +64,10 @@
 @media screen and (min-width: 768px) {
     form{
       padding: 0 0 0 55px;
+    }
+
+    header.contact {
+      background-attachment: fixed;
     }
 
 }
