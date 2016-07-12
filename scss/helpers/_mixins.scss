@@ -7,3 +7,11 @@
   background: $color;
   color: #fff;
 }
+
+@mixin bgCover($size: cover){
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  -ms-background-size: $size;
+  background-size: $size;
+}
