@@ -174,7 +174,7 @@ html {
   header {
     height: 550px;
     padding-top: 50px;
-    background: url("https://images.unsplash.com/uploads/14125120591540eb48427/c1c4b1aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=71aef009b7955aa75361f9b9cc90108e") no-repeat center center fixed;
+    background: url("https://images.unsplash.com/uploads/14125120591540eb48427/c1c4b1aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=71aef009b7955aa75361f9b9cc90108e") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -303,9 +303,11 @@ html {
     font-family: 'Dancing Script', cursive;
     font-size: 3.75em; }
 
-  header p {
-    font-size: 1.25em;
-    font-weight: 600; }
+  header {
+    background-attachment: fixed; }
+    header p {
+      font-size: 1.25em;
+      font-weight: 600; }
 
   .btn {
     margin-top: 30px; }
