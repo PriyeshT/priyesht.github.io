@@ -15,3 +15,8 @@
   -ms-background-size: $size;
   background-size: $size;
 }
+
+@mixin overflow-scroll {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
