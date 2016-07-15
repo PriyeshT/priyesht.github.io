@@ -4,6 +4,7 @@ $(document).ready(function(){
       act = "active";
       hdr = $('header').height();
       work = $("#work");
+      resume = $('#resume');
       projects = $("#projects");
       about = $("#about");
       contact = $("#contact");
@@ -23,23 +24,27 @@ $(document).ready(function(){
     projects.addClass(act);
     about.removeClass(act);
     contact.removeClass(act);
+    resume.removeClass(act);
   })
 
   about.on('click',function(){
     about.addClass(act);
     projects.removeClass(act);
     contact.removeClass(act);
+    resume.removeClass(act);
   });
 
   contact.on('click',function(){
     contact.addClass(act);
     projects.removeClass(act);
     about.removeClass(act);
+    resume.removeClass(act);
   })
 
   work.on('click', function(){
     projects.addClass(act);
     about.removeClass(act);
+    resume.removeClass(act);
   });
 
   $("#contact-form").validate({

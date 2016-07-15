@@ -189,6 +189,13 @@ html {
   .main-nav, .main, .capabilities, .footer, .funfacts {
     position: relative; }
 
+  .fed, .ster {
+    margin: 20px auto; }
+
+  img {
+    height: 250px;
+    width: 250px; }
+
   .main-nav {
     background: #fff;
     margin-bottom: -80px;
@@ -210,11 +217,11 @@ html {
 
   .main {
     background: #fff;
-    padding: 110px 50px 50px; }
+    padding: 90px 50px 50px; }
 
   .capabilities {
     background: #fff;
-    padding: 20px 50px 50px; }
+    padding: 5px 50px 50px; }
 
   .funfacts {
     background: #fff;
@@ -234,7 +241,6 @@ html {
     border-bottom: 1px solid #B6B6B6; }
 
   .underline {
-    text-decoration: underline;
     font-weight: 600; }
 
   .facts {

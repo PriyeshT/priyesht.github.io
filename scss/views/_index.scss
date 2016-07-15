@@ -38,6 +38,15 @@
     position: relative;
   }
 
+  .fed, .ster {
+  margin: 20px auto;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+}
+
   .main-nav {
     background: #fff;
     margin-bottom: -80px;
@@ -69,13 +78,13 @@
 
   .main {
     background: #fff;
-    padding: 110px 50px 50px;
+    padding: 90px 50px 50px;
     @extend %p-justify;
   }
 
   .capabilities {
     background: $white;
-    padding: 20px 50px 50px;
+    padding: 5px 50px 50px;
     @extend %p-justify;
   }
 
@@ -100,7 +109,6 @@
   }
 
   .underline {
-    text-decoration: underline;
     font-weight: 600;
   }
 
