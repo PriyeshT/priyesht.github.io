@@ -4,9 +4,12 @@
 @import 'neat/neat';
 @import 'helpers/variables';
 @import 'helpers/mixins';
+@import 'helpers/animations';
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 html {
@@ -34,42 +37,6 @@ body.contact-page {
 
 .active {
   border-bottom: 2px solid $accent-color;
-}
-
-@-webkit-keyframes bugfix {
-  from{
-    padding: 0;
-  }
-  to{
-    padding: 0;
-  }
-}
-
-@-moz-keyframes bugfix {
-  from{
-    padding: 0;
-  }
-  to{
-    padding: 0;
-  }
-}
-
-@-o-keyframes bugfix {
-  from{
-    padding: 0;
-  }
-  to{
-    padding: 0;
-  }
-}
-
-@keyframes bugfix {
-  from{
-    padding: 0;
-  }
-  to{
-    padding: 0;
-  }
 }
 
 header {

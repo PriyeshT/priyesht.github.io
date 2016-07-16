@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://use.fortawesome.com/4c13728f.js"></script>
+  <!-- <script src="https://use.fortawesome.com/4c13728f.js"></script> -->
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="main-page">
@@ -25,9 +26,9 @@
   <header>
     <div class="container text-center">
 
-      <h1 class="name">Priyesh Tungare</h1><br><br>
-      <h1> IBM Sterling Commerce Consultant &amp;<br>Future Front End Developer</h1><br><br>
-      <p>Currently available for freelance work &amp; collaborations, or a full-time position at your company</p>
+      <h1 class="name animated tada">Priyesh Tungare</h1><br><br>
+      <h1 class="animated fadeInRightBig"> IBM Sterling Commerce Consultant &amp;<br>Future Front End Developer</h1><br><br>
+      <p class="animated fadeInLeftBig">Currently available for freelance work &amp; collaborations, or a full-time position at your company</p>
 
       <a href="portfolio.html" class="btn btn-default" id="work">View my work</a>
 
@@ -48,18 +49,18 @@
 
       <div class="row">
         <div class="col-md-4 fed">
-          <p>
+          <p class="fed-text">
             Hey! I'm Priyesh. I'm a self-taught and passionate <span class="underline">Front-End Developer</span> with intermediate knowledge of back-end technologies.<br>
             My favourite things are Manchester United and Jack Daniels.<br>
             I have been self-learning Front End Development for past 7 months. I have taken courses on <span class="underline">FreeCodeCamp</span>,
             <span class="underline">Codecademy</span> and <span class="underline">Teamtreehouse</span> to learn Front-End Development.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 my-img">
           <img class="img-responsive center-block img-circle" src="img/me.png">
         </div>
         <div class="col-md-4 ster">
-          <p> I have around 9 years of industry experience, and have worked for many exceptional companies during those
+          <p class="ster-text"> I have around 9 years of industry experience, and have worked for many exceptional companies during those
             years, including <span class="underline">Infosys Technologies Ltd</span>, <span class="underline">Sage UK</span>,
             <span class="underline">Astrazeneca UK </span> and <span class="underline">IBM</span>.<br>
             I have worked on all phases of Systems Development Life cycle such as define, design, development,
@@ -70,7 +71,7 @@
 
         <div class="capabilities">
           <div class="row text-center">
-            <div class="col-md-6">
+            <div class="col-md-6 know">
               <h3> What I Know </h3>
 
                 <p> I have a good understanding of Agile practices such as <span class="underline">Backlogs(Products &amp; Sprints),</span>
@@ -86,7 +87,7 @@
                     on. Currently, I work as a <span class="underline">Senior Consultant and Team Lead </span>for our Singapore Development team. I also have experience
                     in <span class="underline">Project Planning &amp; Team Management.</span></p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 skills">
                     <h3> Front-End &amp; Back-End Skills </h3>
                     <div class="progress">
                       <div class="progress-bar" role="progressbar" aria-valuenow="90" ariavaluemin="0"
@@ -153,23 +154,35 @@
 </div>
 
 <div class="funfacts">
-  <div class="row text-center">
-    <div class="col-md-4">
-      <img class="img-responsive" src="http://wallpapercave.com/wp/c5ijePh.jpg" alt="Manchester United">
+  <div class="row">
+    <div class="col-md-6 interests">
+      <h3 class="text-center">Hobbies &amp; Interests</h3>
+      <ul class="fa-ul hobbies">
+        <li><i class="fa-li fa fa-chevron-circle-right"></i>Manchester United</li>
+        <li><i class="fa-li fa fa-chevron-circle-right"></i>Gaming</li>
+        <li><i class="fa-li fa fa-chevron-circle-right"></i>Cooking</li>
+        <li><i class="fa-li fa fa-chevron-circle-right"></i>Reading Articles on Medium &amp; Quora</li>
+        <li><i class="fa-li fa fa-chevron-circle-right"></i>Travelling</li>
+        <li><i class="fa-li fa fa-chevron-circle-right"></i>Sleeping</li>
+      </ul>
     </div>
-
-    <div class="col-md-8">
-      <h1 class="text-left">Random Facts</h1>
-      <ul class="facts text-left">
-        <li>I love Manchester United and everything about Manchester United.</li>
-        <li>I like Cooking and I am a Foodie.</li>
-        <li>I love to play games on PS4. Currently playing either FIFA 16 or F1 2015</li>
-        <li>I like travelling.</li>
-        <li>I love Indian Tea.</li>
+    <div class="col-md-6 tech-skills">
+      <h3 class="text-center">Other Technical Skills</h3>
+      <ul class="fa-ul">
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>IBM Sterling Commerce(CPQ,OMS,SBC)</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Agile Methodologies</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Project Planning</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Team Management</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>IBM DB2</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Java/J2EE (limited)</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>XML/XSLT</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Application Deployment</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>IBM Websphere Application Server</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Oracle Weblogic</li>
+        <li class="it-items"><i class="fa-li fa fa-chevron-circle-right"></i>Apache Tomcat</li>
       </ul>
     </div>
   </div>
-</div>
 
 </div>
 

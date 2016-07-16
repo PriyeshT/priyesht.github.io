@@ -9,6 +9,13 @@ $(document).ready(function(){
       about = $("#about");
       contact = $("#contact");
       formerrors = $('.form-errors');
+      fed = $('.fed');
+      ster = $('.ster');
+      myImg = $('.my-img');
+      know = $('.know');
+      skills = $('.skills');
+      interests = $('.interests');
+      techSkills = $('.tech-skills');
       button = $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
 
 
@@ -19,6 +26,64 @@ $(document).ready(function(){
       mn.removeClass(mns);
     }
   });
+
+  fed.hover(function(){
+    ster.toggleClass('add-opacity');
+    myImg.toggleClass('add-opacity');
+    know.toggleClass('add-opacity');
+    skills.toggleClass('add-opacity');
+    interests.toggleClass('add-opacity');
+    techSkills.toggleClass('add-opacity');
+  });
+  ster.hover(function(){
+    fed.toggleClass('add-opacity');
+    myImg.toggleClass('add-opacity');
+    know.toggleClass('add-opacity');
+    skills.toggleClass('add-opacity');
+    interests.toggleClass('add-opacity');
+    techSkills.toggleClass('add-opacity');
+  });
+  myImg.hover(function(){
+    ster.toggleClass('add-opacity');
+    fed.toggleClass('add-opacity');
+    know.toggleClass('add-opacity');
+    skills.toggleClass('add-opacity');
+    interests.toggleClass('add-opacity');
+    techSkills.toggleClass('add-opacity');
+  });
+  know.hover(function(){
+    ster.toggleClass('add-opacity');
+    myImg.toggleClass('add-opacity');
+    fed.toggleClass('add-opacity');
+    skills.toggleClass('add-opacity');
+    interests.toggleClass('add-opacity');
+    techSkills.toggleClass('add-opacity');
+  });
+  skills.hover(function(){
+    ster.toggleClass('add-opacity');
+    myImg.toggleClass('add-opacity');
+    know.toggleClass('add-opacity');
+    fed.toggleClass('add-opacity');
+    interests.toggleClass('add-opacity');
+    techSkills.toggleClass('add-opacity');
+  });
+  interests.hover(function(){
+    ster.toggleClass('add-opacity');
+    myImg.toggleClass('add-opacity');
+    know.toggleClass('add-opacity');
+    skills.toggleClass('add-opacity');
+    fed.toggleClass('add-opacity');
+    techSkills.toggleClass('add-opacity');
+  });
+  techSkills.hover(function(){
+    ster.toggleClass('add-opacity');
+    myImg.toggleClass('add-opacity');
+    know.toggleClass('add-opacity');
+    skills.toggleClass('add-opacity');
+    interests.toggleClass('add-opacity');
+    fed.toggleClass('add-opacity');
+  });
+
 
   projects.on('click',function(){
     projects.addClass(act);

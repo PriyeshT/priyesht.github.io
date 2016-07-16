@@ -6,14 +6,56 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+@-moz-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+@-o-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+@keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+@-moz-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+@-o-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+@keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -40,26 +82,6 @@ body.contact-page {
 .active {
   border-bottom: 2px solid #FF5722; }
 
-@-webkit-keyframes bugfix {
-  from {
-    padding: 0; }
-  to {
-    padding: 0; } }
-@-moz-keyframes bugfix {
-  from {
-    padding: 0; }
-  to {
-    padding: 0; } }
-@-o-keyframes bugfix {
-  from {
-    padding: 0; }
-  to {
-    padding: 0; } }
-@keyframes bugfix {
-  from {
-    padding: 0; }
-  to {
-    padding: 0; } }
 header {
   -webkit-animation: bugfix infinite 1s;
   -moz-animation: bugfix infinite 1s;
@@ -185,12 +207,23 @@ html {
     header p {
       font-size: 1.125em;
       font-weight: 600; }
+    header .header-title {
+      -webkit-animation: slide-in-left 3s;
+      -moz-animation: slide-in-left 3s;
+      -o-animation: slide-in-left 3s;
+      animation: slide-in-left 3s; }
 
   .main-nav, .main, .capabilities, .footer, .funfacts {
     position: relative; }
 
   .fed, .ster {
     margin: 20px auto; }
+
+  .fa-chevron-circle-right {
+    color: #FF5722; }
+
+  .add-opacity {
+    opacity: 0.3; }
 
   img {
     height: 250px;
@@ -229,7 +262,7 @@ html {
 
   .facts > li {
     font-family: "Kanit", sans-serif;
-    font-size: 1.125em;
+    font-size: 1.375em;
     font-weight: 400;
     line-height: 1.60;
     opacity: 0.70;
@@ -289,12 +322,12 @@ html {
     border-radius: 0; }
     .btn:hover {
       color: #FF5722;
-      background: black;
-      border-color: black;
+      background: #fff;
       border-radius: 0; }
 
   .progress-bar {
-    background-color: #FF5722; }
+    background-color: #FF5722;
+    font-weight: bolder; }
 
   .name {
     font-family: 'Dancing Script', cursive;
