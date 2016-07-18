@@ -114,6 +114,7 @@ img.me {
   .footer {
     background: lighten($secondary-color,20%);
     color: $white;
+    overflow-y: hidden;
 
     .footer-nav{
       list-style: none;

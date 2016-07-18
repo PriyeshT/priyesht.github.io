@@ -17,6 +17,6 @@
 }
 
 @mixin overflow-scroll {
-  overflow-y: hidden;
+  overflow-y: inherit;
   -webkit-overflow-scrolling: touch;
 }

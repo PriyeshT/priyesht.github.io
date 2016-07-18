@@ -53,19 +53,19 @@ html {
 body.main-page {
   margin: 0;
   padding-top: 550px;
-  overflow-y: hidden;
+  overflow-y: inherit;
   -webkit-overflow-scrolling: touch; }
 
 body.portfolio-page {
   margin: 0;
   padding-top: 350px;
-  overflow-y: hidden;
+  overflow-y: inherit;
   -webkit-overflow-scrolling: touch; }
 
 body.contact-page {
   margin: 0;
   padding-top: 350px;
-  overflow-y: hidden;
+  overflow-y: inherit;
   -webkit-overflow-scrolling: touch; }
 
 .active {
@@ -328,7 +328,8 @@ html {
 
   .footer {
     background: #737175;
-    color: #fff; }
+    color: #fff;
+    overflow-y: hidden; }
     .footer .footer-nav {
       list-style: none;
       padding: 10px 2px 2px 2px;
