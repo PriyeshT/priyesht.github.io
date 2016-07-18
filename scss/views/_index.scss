@@ -41,9 +41,6 @@
     position: relative;
   }
 
-  .fed, .ster {
-  margin: 20px auto;
-}
 
 .fa-chevron-circle-right{
   color: $accent-color;
@@ -106,27 +103,12 @@ img.me {
     padding: 40px 50px 50px;
   }
 
-  .facts>li {
-    font-family: "Kanit", sans-serif;
-    font-size: em(22);
-    font-weight: 400;
-    line-height: 1.60;
-    opacity: 0.70;
-    letter-spacing: -0.30px;
-    word-spacing: -0.10px;
-    text-transform: none;
-  }
-
   .divider {
     border-bottom: 1px solid $divider-color;
   }
 
   .underline {
     font-weight: 600;
-  }
-
-  .facts {
-    list-style: none;
   }
 
   .footer {
@@ -151,10 +133,6 @@ img.me {
       & a, & a:hover, & a:visited {
         text-decoration: none;
       }
-    }
-
-    .footer-social {
-      border: 2px solid gold;
     }
 
   }

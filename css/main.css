@@ -52,18 +52,20 @@ html {
 
 body.main-page {
   margin: 0;
-  padding-top: 550px; }
+  padding-top: 550px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 body.portfolio-page {
   margin: 0;
   padding-top: 350px;
-  overflow: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
 
 body.contact-page {
   margin: 0;
   padding-top: 350px;
-  overflow: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
 
 .active {
@@ -277,9 +279,6 @@ html {
   .main-nav, .main, .capabilities, .footer, .funfacts {
     position: relative; }
 
-  .fed, .ster {
-    margin: 20px auto; }
-
   .fa-chevron-circle-right {
     color: #FF5722; }
 
@@ -321,24 +320,11 @@ html {
     background: #fff;
     padding: 40px 50px 50px; }
 
-  .facts > li {
-    font-family: "Kanit", sans-serif;
-    font-size: 1.375em;
-    font-weight: 400;
-    line-height: 1.60;
-    opacity: 0.70;
-    letter-spacing: -0.30px;
-    word-spacing: -0.10px;
-    text-transform: none; }
-
   .divider {
     border-bottom: 1px solid #B6B6B6; }
 
   .underline {
     font-weight: 600; }
-
-  .facts {
-    list-style: none; }
 
   .footer {
     background: #737175;
@@ -355,8 +341,6 @@ html {
       display: inline; }
       .footer .footer-items a, .footer .footer-items a:hover, .footer .footer-items a:visited {
         text-decoration: none; }
-    .footer .footer-social {
-      border: 2px solid gold; }
 
   header, .main-nav-scrolled {
     position: fixed;

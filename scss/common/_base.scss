@@ -28,6 +28,7 @@ html {
 body.main-page {
   margin: 0;
   padding-top: 550px;
+  @include overflow-scroll;
 }
 
 body.portfolio-page {
