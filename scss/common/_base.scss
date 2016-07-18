@@ -176,6 +176,15 @@ p {
   transform: rotateY(100deg);
 }
 
+.footer-nav > li {
+  border-right: 1px solid $accent-color;
+  padding: 0 5px;
+}
+
+.footer-nav > li:last-child {
+  border-right: none;
+}
+
 @media screen and (max-width: 44em) {
   nav[role=menu]{
     a {
