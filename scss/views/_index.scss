@@ -13,7 +13,7 @@
   }
 
   .wrap {
-    min-height: calc(100vh - 117px);
+    min-height: calc(100vh - 175px);
   }
 
   header{
@@ -96,14 +96,14 @@ img.me {
 
   .capabilities {
     background: $white;
-    padding: 60px 50px 50px;
+    padding: 40px 50px 50px;
     @extend %p-justify;
 
   }
 
   .funfacts {
     background: $white;
-    padding: 60px 50px 50px;
+    padding: 40px 50px 50px;
   }
 
   .facts>li {
