@@ -529,6 +529,7 @@ html {
     background: #2c3f52;
     color: #FF5722; }
     figcaption h3 {
+      font-size: 1em;
       margin: 0;
       padding: 0;
       color: #fff; }
@@ -536,9 +537,9 @@ html {
       content: 'by '; }
     figcaption a {
       text-align: center;
-      padding: 5px 10px;
+      padding: 2px 8px;
       border-radius: 2px;
-      display: inline-block;
+      display: block;
       background: #FF5722;
       color: #fff; }
 
@@ -557,15 +558,21 @@ html {
     transition: transform 0.4s, opacity 0.1s; }
     figure:hover figcaption a {
       position: absolute;
-      bottom: 20px;
-      right: 20px; }
+      bottom: 5px;
+      left: 20px; }
       figure:hover figcaption a:hover {
         text-decoration: none;
         background-color: #fff;
         color: #FF5722; } }
 @media screen and (min-width: 650px) {
   header.portfolio {
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+
+  figcaption h3 {
+    font-size: 1.25em; }
+  figcaption a {
+    padding: 5px 10px;
+    display: inline-block; } }
 html {
   box-sizing: border-box; }
 
