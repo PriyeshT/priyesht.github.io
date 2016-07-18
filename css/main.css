@@ -257,7 +257,7 @@ html {
     text-align: justify; }
 
   .wrap {
-    min-height: calc(100vh - 110px); }
+    min-height: calc(100vh - 117px); }
 
   header {
     height: 550px;
@@ -313,15 +313,15 @@ html {
 
   .main {
     background: #fff;
-    padding: 90px 50px 50px; }
+    padding: 110px 50px 50px; }
 
   .capabilities {
     background: #fff;
-    padding: 5px 50px 50px; }
+    padding: 60px 50px 50px; }
 
   .funfacts {
     background: #fff;
-    padding: 20px 50px 50px; }
+    padding: 60px 50px 50px; }
 
   .facts > li {
     font-family: "Kanit", sans-serif;
