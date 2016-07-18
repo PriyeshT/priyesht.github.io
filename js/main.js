@@ -18,6 +18,9 @@ $(document).ready(function(){
       techSkills = $('.tech-skills');
       button = $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
 
+      $(window).load(function() {
+        $("body").removeClass("preload");
+      });
 
   $(window).scroll(function() {
     if( $(this).scrollTop() > hdr ) {

@@ -11,10 +11,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://use.fortawesome.com/4c13728f.js"></script>
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -37,13 +34,13 @@
       <div class="portfolio-nav">
         <div class="row text-center">
           <div class="col-xs-2">
-            <a href="weather.html"><span class="glyphicon glyphicon-chevron-left gi-2x" aria-hidden="true"></span></a>
+            <a href="calc.html"><span class="glyphicon glyphicon-chevron-left gi-2x" aria-hidden="true"></span></a>
           </div>
           <div class="col-xs-8">
             <a href="portfolio.html"><span class="glyphicon glyphicon-th gi-2x" aria-hidden="true"></span></a>
           </div>
           <div class="col-xs-2">
-            <a href="suggestion.html"><span class="glyphicon glyphicon-chevron-right gi-2x" aria-hidden="true"></span></a>
+            <a href="wikiviewer.html"><span class="glyphicon glyphicon-chevron-right gi-2x" aria-hidden="true"></span></a>
           </div>
         </div>
       </div>
@@ -53,7 +50,7 @@
           <p class="project-title">Twitch Streamers</p>
           <p class="project-detail">
             A Web application to show the Twitch Streamers that are online created as part of Intermediate Front End Development projects
-            on <span class="social"><a href="https://www.freecodecamp.com/challenges/use-the-twitchtv-json-api" target="_blank">
+            on <span class="account"><a href="https://www.freecodecamp.com/challenges/use-the-twitchtv-json-api" target="_blank">
               Free Code Camp</a></span> <br> </p>
 
             <p>
@@ -71,7 +68,7 @@
                 <h3 class="panel-title text-center"><b>Technologies Used</b></h3>
               </div>
               <div class="panel-body">
-                HTML5, SCSS(Bourbon), jQuery, Angular JS, BootStrap, Git
+                HTML5, SCSS(Bourbon), jQuery, Angular JS, BootStrap
               </div>
             </div>
           </div>
@@ -100,47 +97,55 @@
               </ul>
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col-md-12">
-              <div class="footer-social">
-                <span class="fa-stack fa-lg">
-                  <a href="https://www.facebook.com/priyesh.tungare" target="_blank" class="fb">
-                    <i class="fa fa-circle-o fa-stack-2x"></i>
-                    <i class="fa fa-facebook-official fa-stack-1x"></i>
-                  </a>
-                </span>
-                <span class="fa-stack fa-lg">
-                  <a href="https://twitter.com/miPriyesh" target="_blank" class="twitter">
-                    <i class="fa fa-circle-o fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                  </a>
-                </span>
-                <span class="fa-stack fa-lg">
-                  <a href="https://sg.linkedin.com/in/priyeshtungare" target="_blank" class="linkedin">
-                    <i class="fa fa-circle-o fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x"></i>
-                  </a>
-                </span>
-                <span class="fa-stack fa-lg">
-                  <a href="https://github.com/PriyeshT" target="_blank" class="github">
-                    <i class="fa fa-circle-o fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x"></i>
-                  </a>
-                </span>
-                <span class="fa-stack fa-lg">
-                  <a href="http://codepen.io/PriyeshT/" target="_blank" class="codepen">
-                    <i class="fa fa-circle-o fa-stack-2x"></i>
-                    <i class="fa fa-codepen fa-stack-1x"></i>
-                  </a>
-                </span>
-                <span class="fa-stack fa-lg">
-                  <a href="https://www.google.com.sg/maps/@1.3295766,103.9361376,16z" target="_blank" class="location">
-                    <i class="fa fa-circle-o fa-stack-2x"></i>
-                    <i class="fa fa-map-marker fa-stack-1x"></i>
-                  </a>
-                </span>
+          <div class="social-container">
+            <a class="social" href="https://www.facebook.com/priyesh.tungare" target="_blank">
+              <div class="front">
+                <i class="fa fa-facebook"></i>
               </div>
-            </div>
+              <div class="back">
+                <i class="fa fa-facebook"></i>
+              </div>
+            </a>
+            <a class="social social-twitter" href="https://twitter.com/miPriyesh" target="_blank">
+              <div class="front">
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="back">
+                <i class="fa fa-twitter"></i>
+              </div>
+            </a>
+            <a class="social social-linkedin" href="https://sg.linkedin.com/in/priyeshtungare" target="_blank">
+              <div class="front">
+                <i class="fa fa-linkedin"></i>
+              </div>
+              <div class="back">
+                <i class="fa fa-linkedin"></i>
+              </div>
+            </a>
+            <a class="social social-github" href="https://github.com/PriyeshT" target="_blank">
+              <div class="front">
+                <i class="fa fa-github"></i>
+              </div>
+              <div class="back">
+                <i class="fa fa-github"></i>
+              </div>
+            </a>
+            <a class="social social-codepen" href="http://codepen.io/PriyeshT/" target="_blank">
+              <div class="front">
+                <i class="fa fa-codepen"></i>
+              </div>
+              <div class="back">
+                <i class="fa fa-codepen"></i>
+              </div>
+            </a>
+            <a class="social social-location" href="https://www.google.com.sg/maps/@1.3295766,103.9361376,16z" target="_blank">
+              <div class="front">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="back">
+                <i class="fa fa-map-marker"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>

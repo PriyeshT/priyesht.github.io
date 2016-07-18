@@ -10,6 +10,11 @@
     background: url('https://images.unsplash.com/photo-1451421924504-c52d431cdad5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9d965a78fac3ea25b7c88cc959eb5654') no-repeat center center;
     @include bgCover;
     overflow: hidden;
+
+    p {
+      font-size: em(26);
+      font-weight: bolder;
+    }
   }
   .contact, .main-nav-scrolled {
     position: fixed;
@@ -26,16 +31,7 @@
     text-align: justify;
   }
 
-  .social {
-    color: $accent-color;
-    font-style: italic;
-    font-weight: bold;
 
-    a{
-      text-decoration: none;
-      color: $accent-color;
-    }
-  }
 
   .has-error {
     & input {

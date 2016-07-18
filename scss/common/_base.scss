@@ -17,6 +17,14 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 body.main-page {
   margin: 0;
   padding-top: 550px;
@@ -99,7 +107,7 @@ h3 {
 
 p {
     font-family: "Kanit", sans-serif;
-    font-size: em(18);
+    font-size: em(20);
     font-weight: 400;
     line-height: 1.60;
     opacity: 0.70;
@@ -108,6 +116,64 @@ p {
     letter-spacing: -0.30px;
     word-spacing: -0.10px;
     text-transform: none;
+}
+
+.account {
+  color: $accent-color;
+  font-weight: bolder;
+
+  a{
+    text-decoration: none;
+    color: $accent-color;
+  }
+}
+
+.social-container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.social {
+  float: left;
+  margin: 1em 1em;
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 33px;
+  color: $white;
+  transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+}
+
+.social > div {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  position: absolute;
+
+}
+
+.social >.front {
+  transform:translateZ(12px);
+}
+
+.social >.back {
+  background: $facebook;
+  color: $white;
+  font-size: 1.5em;
+  transform:rotateY(-100deg) translateZ(12px);
+}
+
+.social.social-twitter > .back { background: $twitter; }
+.social.social-linkedin > .back { background: $linkedin; }
+.social.social-github > .back { background: $github; }
+.social.social-codepen > .back { background: $codepen; }
+.social.social-location > .back { background: $location; }
+
+.social:hover {
+  transform: rotateY(100deg);
 }
 
 @media screen and (max-width: 44em) {
@@ -154,4 +220,5 @@ p {
     color: black;
     font-weight: bold;
   }
+
 }

@@ -11,13 +11,12 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="https://use.fortawesome.com/4c13728f.js"></script>
+  <!-- <script src="https://use.fortawesome.com/4c13728f.js"></script> -->
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body class="portfolio-page">
+<body class="portfolio-page preload">
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -25,9 +24,9 @@
   <header class="portfolio">
     <div class="container text-center">
 
-      <h1 class="name">Priyesh Tungare</h1><br><br>
-      <h1> Portfolio </h1>
-      <p> View the Projects that I have worked on</p>
+      <h1 class="name animated tada">Priyesh Tungare</h1><br><br>
+      <h1 class="animated fadeInRightBig"> Portfolio </h1>
+      <p class="animated fadeInLeftBig"> View the Projects that I have worked on</p>
     </div>
   </header>
   <nav class="main-nav text-center" role="menu">
@@ -45,12 +44,12 @@
 
         <div class="row">
           <div class="col-md-12">
-            <p> Here are some of the projects that I have completed as part of <span class="social"><a href="https://www.freecodecamp.com/priyesht" target="_blank">
+            <p> Here are some of the projects that I have completed as part of <span class="account"><a href="https://www.freecodecamp.com/priyesht" target="_blank">
               FreeCodeCamp's</a></span> Front End Program. </p>
 
-              <p> Please check out my profiles at <span class="social"><a href="https://www.freecodecamp.com/priyesht" target="_blank">
-                  FreeCodeCamp</a></span>, <span class="social"><a href="https://www.codecademy.com/cloudNinja62203" target="_blank">
-                  Codecademy</a></span> &amp; <span class="social"><a href="https://teamtreehouse.com/priyeshtungare" target="_blank">
+              <p> Please check out my profiles at <span class="account"><a href="https://www.freecodecamp.com/priyesht" target="_blank">
+                  FreeCodeCamp</a></span>, <span class="account"><a href="https://www.codecademy.com/cloudNinja62203" target="_blank">
+                  Codecademy</a></span> &amp; <span class="account"><a href="https://teamtreehouse.com/priyeshtungare" target="_blank">
                   TeamTreeHouse</a></span> to learn more about the skills that I have gained during this
                   Self-Learning Journey.
               </p>
@@ -59,102 +58,93 @@
 
 
                 <div class="row portfolio-row">
-                  <div class="col-md-4">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/wiki03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Wikipedia Viewer</h4>
-                        <a href="wikiviewer.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                  <div class="col-md-4 portfolio-item">
+                    <figure>
+                      <img src="img/wiki03.png" alt="Wikipedia Viewer" class="img-responsive">
+                      <figcaption>
+                        <h3>Wikipedia Viewer</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="wikiviewer.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/todo03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">ToDo List</h4>
-                        <a href="todolist.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/todo03.png" alt="Todo List" class="img-responsive">
+                      <figcaption>
+                        <h3>ToDo List</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="todolist.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/pomodoro03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Pomodoro Timer</h4>
-                        <a href="pomodoro.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/pomodoro03.png" alt="Pomodoro Timer" class="img-responsive">
+                      <figcaption>
+                        <h3>Pomodoro Timer</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="pomodoro.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
 
                 <div class="row portfolio-row">
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/quote03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Quote Generator</h4>
-                        <a href="quote.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/quote03.png" alt="Quote Generator" class="img-responsive">
+                      <figcaption>
+                        <h3>Quote Generator</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="quote.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/tribute03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Tribute Page</h4>
-                        <a href="tribute.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/tribute03.png" alt="Tribute" class="img-responsive">
+                      <figcaption>
+                        <h3>Tribute Page</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="tribute.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/weather03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Weather Report</h4>
-                        <a href="weather.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/weather03.png" alt="Weather Report" class="img-responsive">
+                      <figcaption>
+                        <h3>Weather Report</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="weather.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
 
                 <div class="row portfolio-row">
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/calc03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Calculator</h4>
-                        <a href="calc.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/calc03.png" alt="Calculator" class="img-responsive">
+                      <figcaption>
+                        <h3>Calculator</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="calc.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
                   <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/calc03.png" alt="Wikipedia Viewer">
-
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Suggestion Box</h4>
-                        <a href="wikiviewer.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
+                    <figure>
+                      <img src="img/twitch03.png" alt="Twitch Streamers" class="img-responsive">
+                      <figcaption>
+                        <h3>Twitch Streamers</h3>
+                        <span>Priyesh Tungare</span>
+                        <a href="twitch.html">View Project</a>
+                      </figcaption>
+                    </figure>
                   </div>
-                  <div class="col-md-4 portfolio-item">
-                    <div class="card card-inverse">
-                      <img class="img-responsive img-thumbnail card-img" src="img/twitch03.png" alt="Wikipedia Viewer">
 
-                      <div class="card-img-overlay">
-                        <h4 class="card-title">Twitch Streamers</h4>
-                        <a href="twitch.html" class="btn btn-default">View Project</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -178,47 +168,55 @@
                   </ul>
                 </div>
               </div>
-              <div class="row text-center">
-                <div class="col-md-12">
-                  <div class="footer-social">
-                    <span class="fa-stack fa-lg">
-                      <a href="https://www.facebook.com/priyesh.tungare" target="_blank" class="fb">
-                        <i class="fa fa-circle-o fa-stack-2x"></i>
-                        <i class="fa fa-facebook-official fa-stack-1x"></i>
-                      </a>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <a href="https://twitter.com/miPriyesh" target="_blank" class="twitter">
-                        <i class="fa fa-circle-o fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x"></i>
-                      </a>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <a href="https://sg.linkedin.com/in/priyeshtungare" target="_blank" class="linkedin">
-                        <i class="fa fa-circle-o fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                      </a>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <a href="https://github.com/PriyeshT" target="_blank" class="github">
-                        <i class="fa fa-circle-o fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x"></i>
-                      </a>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <a href="http://codepen.io/PriyeshT/" target="_blank" class="codepen">
-                        <i class="fa fa-circle-o fa-stack-2x"></i>
-                        <i class="fa fa-codepen fa-stack-1x"></i>
-                      </a>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                      <a href="https://www.google.com.sg/maps/@1.3295766,103.9361376,16z" target="_blank" class="location">
-                        <i class="fa fa-circle-o fa-stack-2x"></i>
-                        <i class="fa fa-map-marker fa-stack-1x"></i>
-                      </a>
-                    </span>
+              <div class="social-container">
+                <a class="social" href="https://www.facebook.com/priyesh.tungare" target="_blank">
+                  <div class="front">
+                    <i class="fa fa-facebook"></i>
                   </div>
-                </div>
+                  <div class="back">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                </a>
+                <a class="social social-twitter" href="https://twitter.com/miPriyesh" target="_blank">
+                  <div class="front">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                </a>
+                <a class="social social-linkedin" href="https://sg.linkedin.com/in/priyeshtungare" target="_blank">
+                  <div class="front">
+                    <i class="fa fa-linkedin"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa fa-linkedin"></i>
+                  </div>
+                </a>
+                <a class="social social-github" href="https://github.com/PriyeshT" target="_blank">
+                  <div class="front">
+                    <i class="fa fa-github"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa fa-github"></i>
+                  </div>
+                </a>
+                <a class="social social-codepen" href="http://codepen.io/PriyeshT/" target="_blank">
+                  <div class="front">
+                    <i class="fa fa-codepen"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa fa-codepen"></i>
+                  </div>
+                </a>
+                <a class="social social-location" href="https://www.google.com.sg/maps/@1.3295766,103.9361376,16z" target="_blank">
+                  <div class="front">
+                    <i class="fa fa-map-marker"></i>
+                  </div>
+                  <div class="back">
+                    <i class="fa fa-map-marker"></i>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

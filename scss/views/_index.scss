@@ -31,11 +31,8 @@
         font-weight: 600;
       }
 
-      .header-title {
-        -webkit-animation: slide-in-left 3s;
-        -moz-animation: slide-in-left 3s;
-        -o-animation: slide-in-left 3s;
-        animation: slide-in-left 3s;
+      .head-title {
+        font-weight: bold;
       }
 
   }
@@ -57,7 +54,7 @@
   }
 
 
-img {
+img.me {
   height: 250px;
   width: 250px;
 }
@@ -156,31 +153,7 @@ img {
     }
 
     .footer-social {
-      margin-bottom: 20px;
-    }
-
-    .fb {
-      color: $facebook;
-    }
-
-    .twitter {
-      color: $twitter;
-    }
-
-    .linkedin {
-      color: $linkedin;
-    }
-
-    .github {
-      color: $github;
-    }
-
-    .codepen {
-      color: $codepen;
-    }
-
-    .location {
-      color: $location;
+      border: 2px solid gold;
     }
 
   }
