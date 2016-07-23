@@ -199,6 +199,19 @@ p {
 .footer-nav > li:last-child {
   border-right: none; }
 
+.four0four {
+  max-width: 350px;
+  margin: 0 auto; }
+  .four0four .number {
+    display: inline-block;
+    text-align: center; }
+    .four0four .number h1 {
+      font-size: 8em;
+      color: #FF5722; }
+
+.not-found-button {
+  text-transform: uppercase; }
+
 @media screen and (max-width: 44em) {
   nav[role=menu] a {
     display: none;

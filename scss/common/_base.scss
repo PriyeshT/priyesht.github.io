@@ -185,6 +185,24 @@ p {
   border-right: none;
 }
 
+
+.four0four {
+  max-width: 350px;
+  margin: 0 auto;
+  .number {
+    display: inline-block;
+    text-align: center;
+    h1 {
+      font-size: 8em;
+      color: $accent-color;
+    }
+  }
+}
+
+.not-found-button{
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 44em) {
   nav[role=menu]{
     a {

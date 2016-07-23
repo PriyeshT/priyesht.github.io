@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Priyesh Tungare -- Developer, Designer -- https://www.twitter.com/miPriyesh
 
-# THANKS
+#THANKS
 
-    <name>
+  html5 boilerplate, Free Code Camp, Codecademy, Team Tree House
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, Sass, BootStrap, Bourbon
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, jquery-validate
