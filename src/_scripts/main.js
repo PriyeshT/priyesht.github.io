@@ -4,9 +4,11 @@
 'use strict';
 
 import $ from 'jquery';
-import Link from '../_modules/link/link';
+import SiteHeader from '../_modules/organisms/site-header/site-header';
 
 $(() => {
-  new Link(); // Activate Link modules logic
-  console.log('Welcome to Yeogurt!');
+	
+	if($('.nav').length) {
+		new SiteHeader();
+	}
 });

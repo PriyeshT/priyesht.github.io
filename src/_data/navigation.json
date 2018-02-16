@@ -1,0 +1,20 @@
+{
+    "navigation": [
+        {
+            "name": "About",
+            "url": "/about"
+        },
+        {
+            "name": "Portfolio",
+            "url": "/portfolio"
+        },
+        {
+            "name": "Connect",
+            "url": "/connect"
+        },
+        {
+            "name": "Resume",
+            "url": "/resume/Priyesh-Tungare.pdf"
+        }
+    ]
+}

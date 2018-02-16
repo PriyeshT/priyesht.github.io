@@ -1,0 +1,57 @@
+%list-unstyled {
+    @include list-unstyled;
+}
+
+.list-unstyled {
+    @extend %list-unstyled;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@include mobile {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+@include tablet {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+@include desktop {
+    .mobile-only {
+        display: none !important; 
+    }
+
+    .desktop-only {
+        display: block;
+    }
+}

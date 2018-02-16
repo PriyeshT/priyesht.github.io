@@ -1,6 +1,17 @@
 mixin site-header(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the site-header module
+	header.header
+		.site-container
+			h1.site-logo
+				a(href="/")
+					span.first-name Priyesh
+					span.last-name Tungare
+			i.fas.fa-bars.js-menu-toggle.mobile-only
+			nav.nav(role="navigation")
+				ul.primary-nav.list-unstyled
+					each item in spec.navigation
+						li.primary-nav__item.text-center
+							a(href=item.url)= item.name
+					

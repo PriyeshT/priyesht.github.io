@@ -1,0 +1,35 @@
+@mixin list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin mobile {
+    @media screen and (max-width: $bpTablet - 1) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $bpTablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $bpDesktop) {
+        @content;
+    }
+}
+
+@mixin lgDesktop {
+    @media screen and (min-width: $bpLgDesktop) {
+        @content;
+    }
+}
+
+// font size function
+
+@function calc-rem($target, $context: $base-font-size) {
+    @return ($target/$context)*1rem;
+}
