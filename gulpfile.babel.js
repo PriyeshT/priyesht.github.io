@@ -46,7 +46,7 @@ gulp.task('default', ['clean'], () => {
 gulp.task('build', [
   'copy',
   'imagemin',
-  'jade',
+  'pug',
   'sass',
   'browserify'
 ]);
@@ -55,7 +55,7 @@ gulp.task('build', [
 gulp.task('serve', [
   'imagemin',
   'copy',
-  'jade',
+  'pug',
   'sass',
   'browserify',
   'browserSync',
