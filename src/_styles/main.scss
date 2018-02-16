@@ -1,5 +1,5 @@
 // Loading Font
-@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Lato:400,700|Montserrat:400,700');
 
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
@@ -7,6 +7,7 @@
 // Import common files
 @import './vars.scss';
 @import './flex.scss';
+@import './display.scss';
 @import './mixins.scss';
 @import './helpers.scss';
 
@@ -36,10 +37,16 @@ html {
   font-size: 10px;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+  color: $white;
 }
 
 img {
@@ -47,6 +54,20 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  color: $white;
+  border: 1px solid $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: calc-rem(22px);
+}
+
+.hl {
+  border-bottom: 2px solid $accent-color;
 }
 
 // Styling on warning for users on IE7 or below
@@ -60,3 +81,4 @@ img {
 
 // import modules
 @import '../_modules/organisms/site-header/site-header';
+@import '../_modules/organisms/home-banner/home-banner';

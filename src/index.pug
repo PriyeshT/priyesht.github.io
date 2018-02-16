@@ -1,7 +1,7 @@
 extends _layouts/base
 
-include _modules/link/link
+include _modules/organisms/home-banner/home-banner
 
 block content
-	.container
-		h1 Testing Content display
+	main.main#main
+		+home-banner()

@@ -1,0 +1,56 @@
+// home-banner styles
+.home-banner {
+	// background: $base-color;
+	background: #42275a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: $white;
+	padding: 40px 0;
+
+	.title-one {
+		font-size: calc-rem(60px);
+	}
+
+	.title-two {
+		font-size: calc-rem(40px);
+		max-width: 800px;
+		line-height: 1.6;
+	}
+
+	.name {
+		text-transform: uppercase;
+		color: $accent-color;
+		display: inline-block;
+		// background: $accent-color;
+		padding: 0 5px;
+		transition: all .4s ease-out;
+
+		&:hover {
+			background: $white;
+			color: $accent-color;
+		}
+	}
+
+	.company {
+		&:hover {
+			background: $white;
+			color: $accent-color;
+		}
+	}
+
+	.btn__read-more {
+		background: $accent-color;
+		border-color: $accent-color;
+		transition: all .5s ease-in;
+		font-size: calc-rem(26px);
+
+		&:hover {
+			background: $white;
+			color: $accent-color;
+			border-color: $white;
+		}
+	}
+}

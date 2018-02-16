@@ -1,0 +1,14 @@
+mixin home-banner(spec)
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+
+	section.home-banner
+		.container.flex.jc-center.ai-center.fd-column
+			h2.title-one.m0.p0.p15-v Hello There!
+			h2.title-two.m0.p0.p20-v
+				| I'm
+				a.name(href="/")  Priyesh Tungare
+				| , UX Developer and UX Consultant from Singapore at
+				a.company(href="http://adelphi.digital/" target="_blank")  
+					span.hl Adelphi Digital Consulting Group
+			a.btn.btn__read-more(href="/about") Read More
