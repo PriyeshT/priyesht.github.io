@@ -1,0 +1,7 @@
+mixin read-more(spec)
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+
+	a.read-more(href=spec.url class=spec.__class ? spec.__class : '')
+		span= spec.title
+		i.fas.fa-angle-right

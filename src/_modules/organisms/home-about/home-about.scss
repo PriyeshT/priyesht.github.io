@@ -1,6 +1,18 @@
 // home-about styles
 
+.home-about {
+	padding: 3rem 0;
+
+	h2 {
+		margin: 0;
+	}
+}
+
 .about-container {
+
+	&--heading {
+		padding-bottom: 1.5rem;
+	}
 
 	&--content {
 		flex-direction: column;
@@ -26,28 +38,6 @@
 			color: $grey-1;
 			font-size: calc-rem(18px);
 			padding-top: 10px;
-
-			.read-more {
-				color: $accent-color;
-				display: inline-block;
-
-				span {
-					display: inline-block;
-					padding-right: 5px;
-				}
-
-				.fa-angle-right {
-					// vertical-align: middle;
-					transition: transform .4s ease-in-out;
-
-				}
-
-				&:hover {
-					.fa-angle-right {
-						transform: translateX(8px);
-					}
-				}
-			}
 		}
 
 		@include tablet {

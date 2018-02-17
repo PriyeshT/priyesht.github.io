@@ -1,0 +1,52 @@
+{
+	"projects": [
+		{
+			"name": "NParks - Onemap 2.0 migration",
+			"client": "National Parks Board",
+			"role": "UX Developer",
+			"tech": "HTML5, CSS3, jQuery, Grunt, Leaflet, esri-leaflet, Onemap 2.0",
+			"img": "/images/nparks.png",
+			"url": "#",
+			"desc": [
+				{
+					"para": "some description about the project"
+				},
+				{
+					"para": "some description about the project"
+				}
+			]
+		},
+		{
+			"name": "NParks - Routing",
+			"client": "National Parks Board",
+			"role": "UX Developer and UX Consultant",
+			"tech": "HTML5, CSS3, jQuery, ES6, Gulp, Leaflet, esri-leaflet, Onemap 2.0",
+			"img": "/images/nparks-routing.png",
+			"url": "#",
+			"desc": [
+				{
+					"para": "some description about the project"
+				},
+				{
+					"para": "some description about the project"
+				}
+			]
+		},
+		{
+			"name": "Marina Bay Singapore Countdown",
+			"client": "URA",
+			"role": "UX Developer",
+			"tech": "HTML5, CSS3, jQuery, ES6, Gulp, Pug, Google Maps API",
+			"img": "/images/mbsc.png",
+			"url": "#",
+			"desc": [
+				{
+					"para": "some description about the project"
+				},
+				{
+					"para": "some description about the project"
+				}
+			]
+		}
+	]
+}

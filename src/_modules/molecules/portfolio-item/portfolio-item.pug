@@ -1,6 +1,19 @@
-mixin portfolio-item(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+include ../../atoms/read-more/read-more
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the portfolio-item module
+mixin portfolio-item(spec)
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+
+	.portfolio-item
+		.portfolio-item__image
+			a(href=spec.items.url)
+				img(src=spec.items.img, alt=spec.items.name)
+		.portfolio-item__name.flex.fd-column
+			p.proj-name= spec.items.name
+
+			+read-more({
+				"url": "#",
+				"title": "Read More"
+			})
+
+

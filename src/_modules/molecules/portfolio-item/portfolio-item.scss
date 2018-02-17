@@ -1,1 +1,40 @@
 // portfolio-item styles
+
+.portfolio-item {
+	flex: 1 1 calc(33% - 1.5rem);
+	max-width: 33%;
+	margin: .75rem;
+	background: $white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+	&__image {
+		a {
+			display: block;
+
+			img {
+				@include img-responsive();
+				// margin: auto;
+			}
+		}
+	}
+
+	&__name {
+		padding: 2rem 2rem 5rem;
+		font-size: calc-rem(18px);
+		
+		.proj-name {
+			text-transform: uppercase;
+			color: $grey-1;
+			letter-spacing: 1.3px;
+		}
+
+		.read-more {
+			margin-top: auto;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0 0 30px rgba(0,0,0,0.4);
+	}
+}

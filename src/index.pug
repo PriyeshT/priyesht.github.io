@@ -10,4 +10,7 @@ block content
 
 		+home-about()
 
-		+home-portfolio()
+		- var projects = site.data.portfolio
+		+home-portfolio({
+			"projects": projects.projects
+		})

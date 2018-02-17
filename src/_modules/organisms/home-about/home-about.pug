@@ -1,4 +1,5 @@
 include ../../atoms/section-title/section-title
+include ../../atoms/read-more/read-more
 
 mixin home-about(spec)
 	- spec = spec || {}
@@ -18,6 +19,7 @@ mixin home-about(spec)
 
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis et vitae aut doloribus maiores! Necessitatibus perferendis laborum, distinctio. Eligendi vitae quasi qui magnam exercitationem molestiae.
 
-					a.read-more(href="/about")
-						span Read more
-						i.fas.fa-angle-right
+					+read-more({
+						"url": "/about",
+						"title": "Read More"
+					})

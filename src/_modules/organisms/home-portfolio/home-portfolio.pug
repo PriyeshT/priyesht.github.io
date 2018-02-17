@@ -1,4 +1,5 @@
 include ../../atoms/section-title/section-title
+include ../../atoms/read-more/read-more
 include ../../molecules/portfolio-item/portfolio-item
 
 mixin home-portfolio(spec)
@@ -13,4 +14,14 @@ mixin home-portfolio(spec)
 					"__class": "white-text"
 				})
 			.home-portfolio__content
-				p Placeholde for portfolio projects - max 3
+				each project in spec.projects
+					- console.log('project -- ', project)
+					+portfolio-item({
+						"items": project
+					})
+				
+				+read-more({
+					"url": "#",
+					"title": "View All",
+					"__class": "view-all"
+				})

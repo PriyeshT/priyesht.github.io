@@ -1,0 +1,22 @@
+// read-more styles
+.read-more {
+	color: $accent-color;
+	display: inline-block;
+
+	span {
+		display: inline-block;
+		padding-right: 5px;
+	}
+
+	.fa-angle-right {
+		// vertical-align: middle;
+		transition: transform .4s ease-in-out;
+
+	}
+
+	&:hover {
+		.fa-angle-right {
+			transform: translateX(8px);
+		}
+	}
+}

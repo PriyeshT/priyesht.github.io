@@ -2,4 +2,19 @@
 
 .home-portfolio {
 	background: $gradient-2;
+	padding: 3rem 0;
+
+	.home-portfolio__content {
+		display: flex;
+		flex-wrap: wrap;
+
+		.view-all {
+			font-size: calc-rem(22px);
+			padding: 1.5rem 0;
+			display: block;
+			width: 100%;
+			text-align: center;
+			color: $white;
+		}
+	}
 }
