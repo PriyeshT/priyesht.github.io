@@ -2,4 +2,4 @@ mixin section-title(spec)
 	- spec = spec || {}
 	- spec.__class = spec.__class || ''
 
-	h2.section-title= spec.title
+	h2.section-title(class=spec.__class ? spec.__class : '')= spec.title

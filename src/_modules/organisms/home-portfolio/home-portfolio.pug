@@ -1,0 +1,16 @@
+include ../../atoms/section-title/section-title
+include ../../molecules/portfolio-item/portfolio-item
+
+mixin home-portfolio(spec)
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+
+	section.home-portfolio
+		.container
+			.home-portfolio__heading
+				+section-title({
+					"title": "Portfolio",
+					"__class": "white-text"
+				})
+			.home-portfolio__content
+				p Placeholde for portfolio projects - max 3
