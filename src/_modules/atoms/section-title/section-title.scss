@@ -1,0 +1,16 @@
+// section-title styles
+.section-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc-rem(30px);
+	text-transform: uppercase;
+	color: $grey-1;
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+	position: relative;
+
+	&:after {
+		@include pseudo();
+		width: 60px;
+		height: 4px;
+		background: $accent-color;
+	}
+}

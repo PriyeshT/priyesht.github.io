@@ -1,0 +1,23 @@
+include ../../atoms/section-title/section-title
+
+mixin home-about(spec)
+	- spec = spec || {}
+	- spec.__class = spec.__class || ''
+
+	section.home-about
+		.container
+			.about-container--heading
+				+section-title({
+					"title": "About Me"
+				})
+			.about-container--content.flex.jc-center.ai-center
+				.about-image-container
+					img(src="https://picsum.photos/350?random" alt="Priyesh Tungare - UX Developer and UX Consultant based in Singapore.")
+				.about-text-container.as-flex-start
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus perferendis quidem, iste rerum, esse libero!
+
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis et vitae aut doloribus maiores! Necessitatibus perferendis laborum, distinctio. Eligendi vitae quasi qui magnam exercitationem molestiae.
+
+					a.read-more(href="/about")
+						span Read more
+						i.fas.fa-angle-right

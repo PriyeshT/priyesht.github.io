@@ -4,14 +4,9 @@ mixin site-header(spec)
 
 	header.header
 		.site-container
-			h1.site-logo
-				a(href="/")
-					span.first-name Priyesh
-					span.last-name Tungare
-			i.fas.fa-bars.js-menu-toggle.mobile-only
 			nav.nav(role="navigation")
-				ul.primary-nav.list-unstyled
+				ul.primary-nav.list-unstyled.flex.flex-wrap.jc-space-around.ai-center
 					each item in spec.navigation
-						li.primary-nav__item.text-center
+						li.primary-nav__item
 							a(href=item.url)= item.name
 					

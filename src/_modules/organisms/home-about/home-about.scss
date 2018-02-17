@@ -1,0 +1,57 @@
+// home-about styles
+
+.about-container {
+
+	&--content {
+		flex-direction: column;
+
+
+		.about-image-container {
+			width: 100%;
+			position: relative;
+			padding: 10px;
+
+			img {
+				@include img-responsive();
+				margin: auto;
+				transition: transform .4s ease-in;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+
+		.about-text-container {
+			color: $grey-1;
+			font-size: calc-rem(18px);
+			padding-top: 10px;
+
+			.read-more {
+				color: $accent-color;
+				display: inline-block;
+
+				span {
+					display: inline-block;
+					padding-right: 5px;
+				}
+
+				.fa-angle-right {
+					// vertical-align: middle;
+					transition: transform .4s ease-in-out;
+
+				}
+
+				&:hover {
+					.fa-angle-right {
+						transform: translateX(8px);
+					}
+				}
+			}
+		}
+
+		@include tablet {
+			flex-direction: row;
+		}
+	}
+}

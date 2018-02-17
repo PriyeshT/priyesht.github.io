@@ -50,10 +50,8 @@ a {
 }
 
 img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  display: block;
+  vertical-align: middle;
+  border: none;
 }
 
 .btn {
@@ -80,5 +78,9 @@ img {
 }
 
 // import modules
+
+@import '../_modules/atoms/section-title/section-title';
+
 @import '../_modules/organisms/site-header/site-header';
 @import '../_modules/organisms/home-banner/home-banner';
+@import '../_modules/organisms/home-about/home-about';

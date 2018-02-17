@@ -11,6 +11,10 @@
     flex-direction: row;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .jc-center {
     justify-content: center;
 }
@@ -19,10 +23,18 @@
     justify-content: space-between;
 }
 
+.jc-space-around {
+    justify-content: space-around;
+}
+
 .ai-center {
     align-items: center;
 }
 
 .as-center {
     align-self: center;
+}
+
+.as-flex-start {
+    align-self: flex-start;
 }
